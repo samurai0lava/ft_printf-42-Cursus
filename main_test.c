@@ -33,7 +33,7 @@ int main (void)
 	nbr += ft_printf("null in hex :    %x\n", nul);
 	nbr += ft_printf("max in hex :     %X\n", max);
 	nbr += ft_printf("                 %%\n");
-	nbr += ft_printf("POINTER LONG     %p \n%p\n ", &min_l, &max_l);
+	nbr += ft_printf("POINTER LONG     %p\n%p\n", &min_l, &max_l);
 	nbr += ft_printf("                 %p\n", (void *)-14523);
 	nbr += ft_printf("0x               %p-\n", (void *)ULONG_MAX);
 	nbr += ft_printf("                 %pp%p%p", (void *)LONG_MAX + 423856, (void *)0, (void *)INT_MAX);
@@ -46,7 +46,7 @@ int main (void)
 	num += printf("integer min :    %i\n", min);
 	num += printf("unsigned :       %u\n", ui);
 	num += printf("unsigned neg :   %u\n", nui);
-	num += printf("pointer of char :%p\n", p);
+	num += printf("pointer of char: %p\n", p);
 	num += printf("pointer of min : %p\n", pt);
 	num += printf("null in hex :    %x\n", nul);
 	num += printf("max in hex :     %X\n", max);

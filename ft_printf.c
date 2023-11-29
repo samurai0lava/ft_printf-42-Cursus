@@ -34,7 +34,7 @@ static int	check_format(const char format, va_list ap)
 	else if (format == 'u')
 		len += ft_putnbr_base((long)va_arg(ap, unsigned int), 10, 0);
 	else
-		len = -1;
+		len = 0;
 	return (len);
 }
 
@@ -50,7 +50,7 @@ int	ft_printf(const char *format, ...)
 	while (format[i])
 	{
 		if (format[i] == '%' && format[i + 1] == '\0')
-			return (-1);
+			return (0);
 		else if (format[i] == '%' && ft_strchr("cspdiuxX%", format[i + 1]))
 		{
 			count += check_format(format[i + 1], ap);
